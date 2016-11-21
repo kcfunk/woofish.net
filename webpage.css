@@ -58,7 +58,7 @@ div.button-container {
 	height: 50px;
 	position: absolute;
 	bottom: 0px;
-	right: 20%;
+	right: 5%;
 	
 }
 
@@ -102,7 +102,29 @@ div.button-menu {
 	transition: 0.1s;
 }
 
+div.about-dropmenu {
+	position: absolute;
+	top: 0px;
+	right: -70px;
+	font-family: 'Roboto';
+	font-size: 1em;
+	background-color: #b5c1dd;
+	color: #182e5e;
+	z-index:-2;
+	overflow:hidden;
+	max-height: 20px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 0 0 5px 5px;
+	transition: 0.1s;
+}
+
 div.button-menu.show {
+	top: 50px;
+	max-height: 200px;	
+	transition: 0.3s ease-out;
+}
+
+div.about-dropmenu.show {
 	top: 50px;
 	max-height: 200px;	
 	transition: 0.3s ease-out;
@@ -137,16 +159,27 @@ body {
 	color: #2F2F4F;
 	background-color: #262f5c;
 	font-family: 'Roboto', Verdana;
-	height: 100%;
+	
 }
 
+html {
+	height: 100%;
+ }
+
 div.main {
-	margin: 0 0 0 30px;
-	padding: 35px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	padding: 65px;
 	border-radius: 0 0 8px; 8px;
+	background-color: #fafbff;
+	overflow: auto;
 }
 
 div.indented{
+
 	position: absolute;
 	margin-left: 210px;
 	background-color: #fafbff;
@@ -159,6 +192,11 @@ div.indented{
 }
 
 div.indented.dark {
+	background-color: #060b27;
+	color: #e9ebff;
+}
+
+div.main.dark {
 	background-color: #060b27;
 	color: #e9ebff;
 }
